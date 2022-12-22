@@ -18,7 +18,7 @@ async def start_handler(message: types.Message):
     USER_ID = message.from_user.id
     USER_NAME = message.from_user.first_name
     USER_FULL_NAME = message.from_user.full_name
-    logging.info(f'{USER_ID} {USER_FULL_NAME} {time.asctime()}')
+    logging.info(f'{USER_ID}, {USER_FULL_NAME}, {time.asctime()}')
 
     await message.reply(f"Hello, {USER_FULL_NAME}! Don't you think it's a good day?)")
 
