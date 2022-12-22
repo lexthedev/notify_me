@@ -23,7 +23,8 @@ async def start_handler(message: types.Message):
     await message.reply(f"Hello, {USER_FULL_NAME}! Don't you think it's a good day?)")
 
     for i in range(7):
-        time.sleep(60*60*24)
+        # time.sleep(60*60*24)
+        time.sleep(15)
 
         await bot.send_message(USER_ID, MSG.format(USER_NAME))
 
