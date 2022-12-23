@@ -29,4 +29,4 @@ async def start_handler(message: types.Message):
         await bot.send_message(USER_ID, MSG.format(USER_NAME))
 
 if __name__ == '__main__':
-    executor.start_polling(dp)
+    executor.start_polling(dp, skip_updates=True)
